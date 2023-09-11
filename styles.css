@@ -1,0 +1,232 @@
+/* styles.css */
+
+/* Default styles for all screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5ff; /* Light blue background */
+}
+
+header {
+    background-color: #0073e6; /* Dark blue header background */
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.header-text {
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Add padding for content */
+}
+
+h2 {
+    color: #0073e6; /* Dark blue heading */
+    background-color: #f0f5ff; /* Light blue background for section titles */
+    padding: 10px;
+    margin: 0;
+}
+
+p {
+    color: #333; /* Dark gray text */
+    padding: 10px;
+    margin: 0;
+}
+
+a {
+    color: #0073e6; /* Blue link */
+}
+
+.intro {
+    background-color: #fff; /* Light background for general information */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    color: #0073e6; /* Dark blue heading for general information */
+    background-color: #f0f5ff; /* Light blue background for section titles */
+    padding: 10px;
+    margin: 0;
+}
+
+.intro ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.intro ul li {
+    margin-bottom: 10px;
+}
+
+/* Timeline */
+.timeline {
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 2px;
+    height: 100%;
+    background-color: #0073e6; /* Blue timeline line */
+}
+
+.job {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0; /* Gray border for cards */
+    border-radius: 5px; /* Rounded corners for cards */
+    position: relative;
+}
+
+.job h3 {
+    margin: 0;
+}
+
+/* Blue tags for skills */
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #0073e6; /* Dark blue */
+    color: #fff;
+    border-radius: 3px;
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+}
+
+/* Social Icon Links */
+.social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #0073e6;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Custom class for social links */
+.social-link {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #0073e6;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Style for LinkedIn icon */
+.social-link.linkedin {
+    background-color: #0073e6;
+}
+
+/* Style for GitHub icon */
+.social-link.github {
+    background-color: #333;
+}
+
+/* Style for Email (Mail) icon */
+.social-link.email {
+    background-color: #333; /* Orange color for email icon */
+}
+
+/* Style for the Call to Action (CTA) button */
+.cta-button {
+    background-color: White; /* Dark blue background color */
+    color: black; /* White text color */
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+/* Media query for screens with a maximum width of 480px (phones) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px; /* Reduce header padding for phones */
+    }
+
+    header img {
+        max-width: 80px; /* Reduce profile picture size for phones */
+    }
+
+    .header-text {
+        margin-left: 10px; /* Adjust text margin for phones */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce font size for headings on phones */
+    }
+
+    /* Reduce font size for other text as needed */
+    h2,
+    p {
+        font-size: 16px;
+    }
+
+    /* Adjust padding for timeline and job cards on phones */
+    .timeline {
+        padding-left: 10px;
+    }
+
+    .job {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    cta-button {
+        padding: 8px 20px; /* Adjust CTA button padding for smaller screens */
+    }
+
+    /* Style adjustments for the "General Information" section */
+    .intro h2 {
+        font-size: 20px; /* Adjust heading font size for smaller screens */
+        text-align: center; /* Center align heading on smaller screens */
+    }
+}
